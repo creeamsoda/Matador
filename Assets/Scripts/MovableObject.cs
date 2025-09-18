@@ -1,24 +1,35 @@
+using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using Utils;
 using static DefaultNamespace.GameConst;
 
 public class MovableObject : MonoBehaviour
 {
-    private Vector3 positionLastFrame;
-    private Quaternion rotationLastFrame;
-    private Vector3 velocity => (this.transform.position - positionLastFrame) / Time.deltaTime;
+    protected Vector3 positionLastFrame;
+    protected Vector3 positionCurrentFrame;
+    protected Quaternion rotationLastFrame;
+    protected Quaternion rotationCurrentFrame;
+    protected Vector3 velocity => (positionCurrentFrame - positionLastFrame) / Time.deltaTime;
+    
+    public List<Flag> FlagsInField { get; set; }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
         positionLastFrame = transform.position;
         rotationLastFrame = transform.rotation;
+        positionCurrentFrame = transform.position;
+        rotationCurrentFrame = transform.rotation;
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
-        
+        positionLastFrame = positionCurrentFrame;
+        rotationLastFrame = rotationCurrentFrame;
+        positionCurrentFrame = transform.position;
+        rotationCurrentFrame = transform.rotation;
     }
 
     protected void Move(Vector2 speed)
@@ -36,10 +47,10 @@ public class MovableObject : MonoBehaviour
 
         if (StageEnd.y < destinationPos.y)
         {
-            movedPos.y = StageEnd.y;
+            movedPos.z = StageEnd.y;
         }else if (destinationPos.y < -StageEnd.y)
         {
-            movedPos.y = -StageEnd.y;
+            movedPos.z = -StageEnd.y;
         }
         transform.position = movedPos;
     }

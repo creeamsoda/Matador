@@ -249,6 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141821199}
+  - component: {fileID: 141821200}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -273,6 +274,20 @@ Transform:
   - {fileID: 531498992}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &141821200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141821198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9e9d19e0104da681b2e0cef7441e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffalo: {fileID: 821504638}
+  cloth: {fileID: 531498991}
 --- !u!1 &411243801
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &531498992
 Transform:
   m_ObjectHideFlags: 0
@@ -498,6 +513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821504637}
+  - component: {fileID: 821504638}
   m_Layer: 0
   m_Name: Buffalo
   m_TagString: Untagged
@@ -520,6 +536,65 @@ Transform:
   m_Children:
   - {fileID: 2004740250}
   - {fileID: 411243802}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821504638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821504636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257e5b4f49f64153a4a1d4d3873bc88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &914004061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914004063}
+  - component: {fileID: 914004062}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &914004062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914004061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f2c2aba88848b796ef3e024a38cfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buffalo: {fileID: 821504638}
+  player: {fileID: 141821200}
+  flagPrefab: {fileID: 5347275157943024140, guid: 934bd586bb1c434418e253dc673d425b, type: 3}
+--- !u!4 &914004063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914004061}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1139034179
@@ -609,7 +684,7 @@ Transform:
   m_GameObject: {fileID: 1139034179}
   serializedVersion: 2
   m_LocalRotation: {x: 0.4806109, y: -0, z: -0, w: 0.876934}
-  m_LocalPosition: {x: 0, y: 19.44, z: -11.49}
+  m_LocalPosition: {x: 0, y: 25.6, z: -21.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -992,3 +1067,4 @@ SceneRoots:
   - {fileID: 1569259444}
   - {fileID: 821504637}
   - {fileID: 141821199}
+  - {fileID: 914004063}
