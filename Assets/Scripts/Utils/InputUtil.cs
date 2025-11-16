@@ -2,16 +2,17 @@ using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Utils
 {
     public class InputUtil
     {
-        public static async UniTask HandleLongPress(Action shortPressAction, Action longPressAction, KeyCode keycode, float longPressThreshold, CancellationToken cancel)
+        public static async UniTask HandleLongPress(Action shortPressAction, Action longPressAction, InputAction button, float longPressThreshold, CancellationToken cancel)
         {
-            if (!Input.GetKey(keycode)) return;
+            if (!button.IsPressed()) return;
             float pressDuration = 0f;
-            while (Input.GetKey(keycode))
+            while (button.IsPressed())
             {
                 if (cancel.IsCancellationRequested) return;
                 pressDuration += Time.deltaTime;
@@ -29,11 +30,11 @@ namespace Utils
             }
         }
         
-        public static async UniTask HandleLongPress(Action shortPressAction, Action longPressingAction, Action longPressEndAction, KeyCode keycode, float longPressThreshold, CancellationToken cancel)
+        public static async UniTask HandleLongPress(Action shortPressAction, Action longPressingAction, Action longPressEndAction, InputAction buttonAction, float longPressThreshold, CancellationToken cancel)
         {
-            if (!Input.GetKey(keycode)) return;
+            if (!buttonAction.IsPressed()) return;
             float pressDuration = 0f;
-            while (Input.GetKey(keycode))
+            while (buttonAction.IsPressed())
             {
                 if (cancel.IsCancellationRequested) return;
                 pressDuration += Time.deltaTime;

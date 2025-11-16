@@ -17,6 +17,14 @@ namespace DefaultNamespace
         
         private bool isGetFlagDuringTackle = false;
 
+        private void Awake()
+        {
+            Debug.Log("Null? player" + (player == null) + " playerTransform: " + (player.transform == null) + " buffalo: " + (buffalo == null) + " buffaloTransform: " + (buffalo.transform == null) + "");
+            buffalo.playerTransform = player.transform;
+            
+            player.buffaloTransform = buffalo.transform;
+        }
+
         private void Start()
         {
             buffalo.OnGetFlag.Subscribe(flag => 

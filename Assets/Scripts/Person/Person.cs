@@ -3,6 +3,7 @@ using Cysharp.Threading.Tasks;
 using DefaultNamespace;
 using UniRx;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Utils;
 
 namespace Person
@@ -49,16 +50,23 @@ namespace Person
             transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y-rotateAmount, 0);
         }
 
-        protected async UniTask Dodge()
+        protected async UniTask Dodge(InputAction moveAction)
         {
-            // 左側にかいひする
-            Vector2 dodgeDirection = new Vector2(- Mathf.Cos(transform.rotation.eulerAngles.y), Mathf.Sin(transform.rotation.eulerAngles.y));
-            float dodegeDuration = 0f;
+            // スティック入力方向にかいひする
+            Vector2 dodgeDirection = moveAction.ReadValue<Vector2>().normalized;
+            float dodgeDuration = 0f;
             while (true)
             {
-                dodegeDuration += Time.deltaTime;
-                if (dodegeDuration >= GameConst.DodgeDurationMax)break;
+                dodgeDuration += Time.deltaTime;
+                if (dodgeDuration >= GameConst.DodgeDurationMax)break;
                 Move(dodgeDirection * GameConst.DodgeSpeed);
+                await UniTask.Yield();
+            }
+            Vector2 dodgeVelocity = dodgeDirection * GameConst.DodgeSpeed;
+            while (dodgeVelocity.sqrMagnitude > GameConst.DodgeStunEndThreshold*GameConst.DodgeStunEndThreshold)
+            {
+                dodgeVelocity = Vector2.Lerp(dodgeVelocity, Vector2.zero, Time.deltaTime * GameConst.DodgeStunRate);
+                Move(dodgeVelocity);
                 await UniTask.Yield();
             }
         }

@@ -10,7 +10,9 @@ public class MovableObject : MonoBehaviour
     protected Vector3 positionCurrentFrame;
     protected Quaternion rotationLastFrame;
     protected Quaternion rotationCurrentFrame;
-    protected Vector3 velocity => (positionCurrentFrame - positionLastFrame) / Time.deltaTime;
+    protected Vector3 velocityXYZ => (positionCurrentFrame - positionLastFrame) / Time.deltaTime;
+    protected Vector2 velocity => VectorUtils.ToXZ(velocityXYZ);
+    protected Quaternion direction;
     
     public List<Flag> FlagsInField { get; set; }
     
@@ -21,6 +23,7 @@ public class MovableObject : MonoBehaviour
         rotationLastFrame = transform.rotation;
         positionCurrentFrame = transform.position;
         rotationCurrentFrame = transform.rotation;
+        direction = Quaternion.Euler(0, transform.eulerAngles.y, 0);
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class MovableObject : MonoBehaviour
     {
         positionLastFrame = positionCurrentFrame;
         rotationLastFrame = rotationCurrentFrame;
+        transform.rotation = direction;
         positionCurrentFrame = transform.position;
         rotationCurrentFrame = transform.rotation;
     }

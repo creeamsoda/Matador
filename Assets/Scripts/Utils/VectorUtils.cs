@@ -13,5 +13,10 @@ namespace Utils
         {
             return new Vector2(v.x, v.z);
         }
+
+        public static Vector3 ToXYZ(Vector2 v)
+        {
+            return new Vector3(v.x, 0f, v.y);
+        }
     }
 }
