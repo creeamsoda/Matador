@@ -16,27 +16,25 @@ namespace Buffalo.Brain
         private static readonly float destinationYBlurAmount = 5f;
         private Vector2 destination;
 
-        private static readonly Subject<IBuffaloBrain> onChangedBrain = new Subject<IBuffaloBrain>();
-        public static readonly IObservable<IBuffaloBrain> OnChangedBrain = onChangedBrain;
+        private readonly Subject<IBuffaloBrain> onChangedBrain = new Subject<IBuffaloBrain>();
+        public IObservable<IBuffaloBrain> OnChangedBrain => onChangedBrain;
 
         public WalkBuffaloThink(BuffaloBrainArgs args)
         {
             destination = DecideDestination(args.position);
-            Debug.Log("next destination = " + destination);
         }
         
         public Vector2 Process(BuffaloBrainArgs args)
         {
             
-#if UNITY_EDITOR
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (BuffaloUtils.IsPlayerFindable(args.position, args.velocity, args.targetPosition))
                 onChangedBrain.OnNext(new TackleBuffaloThink()); 
-#endif
+
+            args.buffaloView.IsNeckRotation = false;
             if (VectorUtils.SqrDistance(args.position, destination) <
                 destinationChangeDistance * destinationChangeDistance)
             {
                 destination = DecideDestination(args.position);
-                Debug.Log("next destination = " + destination);
             }
 
             Vector2 velocity = Vector2.Lerp(args.velocity, (destination - args.position).normalized * GameConst.BuffaloWalkSpeed, GameConst.BuffaloWalkLerpRate * Time.deltaTime);
@@ -65,6 +63,10 @@ namespace Buffalo.Brain
         public void SubscribeOnChangedBrain(Action<IBuffaloBrain> action)
         {
             OnChangedBrain.Subscribe(action);
+        }
+        public void Dispose()
+        {
+            onChangedBrain.Dispose();
         }
     }
 }

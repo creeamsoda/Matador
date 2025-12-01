@@ -10,5 +10,6 @@ namespace Buffalo.Brain
         private static readonly float WallRepulsiveArea;
         public Vector2 Process(BuffaloBrainArgs args);
         public void SubscribeOnChangedBrain(Action<IBuffaloBrain> action);
+        public void Dispose();
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
@@ -38,7 +39,12 @@ public class MovableObject : MonoBehaviour
 
     protected void Move(Vector2 speed)
     {
+        if (Time.deltaTime == 0) return;
+        
+        // ( speed * Time.deltaTime + position)
         Vector2 destinationPos = speed * Time.deltaTime + VectorUtils.ToXZ(transform.position);
+        if (float.IsNaN(destinationPos.x))
+            Debug.Log("Move to: " + destinationPos + " x = "+destinationPos.x + " y = " + destinationPos.y);
         Vector3 movedPos = new Vector3(destinationPos.x, transform.position.y, destinationPos.y);
         
         if (StageEnd.x < destinationPos.x)
@@ -56,6 +62,13 @@ public class MovableObject : MonoBehaviour
         {
             movedPos.z = -StageEnd.y;
         }
+        transform.position = movedPos;
+    }
+
+    protected void ForceMove(Vector2 speed)
+    {
+        Vector2 destinationPos = speed * Time.deltaTime + VectorUtils.ToXZ(transform.position);
+        Vector3 movedPos = new Vector3(destinationPos.x, transform.position.y, destinationPos.y);
         transform.position = movedPos;
     }
 }

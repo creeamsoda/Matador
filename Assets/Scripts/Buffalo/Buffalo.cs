@@ -19,15 +19,23 @@ namespace Buffalo
         private readonly float tackleSpan = 1f;
         private Subject<Unit> onWantToTackle = new Subject<Unit>();
         public IObservable<Unit> OnWantToTackle => onWantToTackle;
-        public bool IsTackling { get; private set; } = false;
         private CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
+        
+        private Subject<Unit> onTackleStart = new Subject<Unit>();
+        public IObservable<Unit> OnTackleStart => onTackleStart;
         
         private Subject<Unit> onTacklEnd = new Subject<Unit>();
         public IObservable<Unit> OnTackleEnd => onTacklEnd;
         private Subject<Flag> onGetFlag = new Subject<Flag>();
         public IObservable<Flag> OnGetFlag => onGetFlag;
         
-        [System.NonSerialized] public Transform playerTransform;
+        [SerializeField] private Transform playerTransform;
+        [SerializeField] private Animator buffaloAnimator;
+        [SerializeField] private Animator buffaloBodyAnimator;
+        [SerializeField] private Animator buffaloHeadAnimator;
+        [SerializeField] private Transform headTransform;
+        public BuffaloView buffaloView;
+        protected bool isBig = false;
         
         public float SpeedUpRate { get; set; } = 1f;
         
@@ -36,9 +44,33 @@ namespace Buffalo
         protected override void Start()
         {
             base.Start();
+            buffaloView = new BuffaloView(buffaloAnimator, buffaloBodyAnimator, buffaloHeadAnimator,headTransform);
             // Walk(cancelTokenSource.Token);
-            currentBrain = new WalkBuffaloThink(new BuffaloBrainArgs(VectorUtils.ToXZ(transform.position), velocity, playerTransform.position));
-            currentBrain.SubscribeOnChangedBrain((IBuffaloBrain brain) => currentBrain = brain);
+            currentBrain = new StayBuffaloThink(new BuffaloBrainArgs(VectorUtils.ToXZ(transform.position), velocity,
+                VectorUtils.ToXZ(playerTransform.position), buffaloView, isBig));
+            currentBrain.Dispose();
+            currentBrain = new WalkBuffaloThink(new BuffaloBrainArgs(VectorUtils.ToXZ(transform.position), velocity,
+                VectorUtils.ToXZ(playerTransform.position), buffaloView, isBig));
+            currentBrain.SubscribeOnChangedBrain(SubscribeOnChangedBrain);
+        }
+        
+        private void SubscribeOnChangedBrain(IBuffaloBrain brain)
+        {
+            IBuffaloBrain prevBrain = currentBrain;
+            prevBrain.Dispose();
+            currentBrain = brain;
+            currentBrain.SubscribeOnChangedBrain(SubscribeOnChangedBrain);
+            if (brain is TackleBuffaloThink tackleBrain)
+            {
+                tackleBrain.OnTackleStart.Subscribe(_ =>
+                {
+                    onTackleStart.OnNext(Unit.Default);
+                });
+                tackleBrain.OnTackleEnd.Subscribe(_ =>
+                {
+                    onTacklEnd.OnNext(Unit.Default);
+                });
+            }
         }
 
         protected override void Update()
@@ -53,31 +85,55 @@ namespace Buffalo
             // {
             //     onGetFlag.OnNext(CheckGetFlag());
             // }
-            Vector2 nextVelocity = currentBrain.Process(new BuffaloBrainArgs(VectorUtils.ToXZ(transform.position), velocity, playerTransform.position));
+            Vector2 nextVelocity = currentBrain.Process(new BuffaloBrainArgs(VectorUtils.ToXZ(transform.position), velocity, VectorUtils.ToXZ(playerTransform.position), buffaloView, isBig));
             direction = GetTurnAmount(nextVelocity);
+            buffaloView.SetWalkSpeed(nextVelocity.magnitude);
+            buffaloView.SetHeadRotation(Vector2.SignedAngle(VectorUtils.ToXZ(transform.forward), VectorUtils.ToXZ(playerTransform.position) - VectorUtils.ToXZ(transform.position)));
+            buffaloView.SetIsHeadDown(BuffaloUtils.IsPlayerNearHead(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(transform.forward), VectorUtils.ToXZ(playerTransform.position)));
             Move(nextVelocity);
         }
 
-        private async UniTask Walk(CancellationToken token)
+        public Vector2? GetAttackVector(Vector2 targetPosition)
         {
-            // while (true)
-            // {
-            //     if (token.IsCancellationRequested) return;
-            //     Vector2 targetPosition = getWalkTargetDirection();
-            //     Debug.Log("targetPosition: " + targetPosition);
-            //     float walkForOneTargetDuration = 0f;
-            //     float walkForOneTargetSpan = Random.Range(1f, 3f);
-            //     while (walkForOneTargetDuration < walkForOneTargetSpan)
-            //     {
-            //         if (token.IsCancellationRequested) return;
-            //         walkForOneTargetDuration += Time.deltaTime;
-            //         float speed = Mathf.Lerp(velocity.magnitude, GameConst.BuffaloWalkSpeed*SpeedUpRate, 1.5f * Time.deltaTime);
-            //         Turn(targetPosition);
-            //         Move(VectorUtils.ToXZ(transform.forward) * speed);
-            //         if ((VectorUtils.ToXZ(transform.position) - targetPosition).sqrMagnitude < 2f * 2f) break;
-            //         await UniTask.Yield();
-            //     }
-            // }
+            if ( /*isAttacking && */VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), targetPosition) <
+                                    GameConst.BuffaloAttackRadius * GameConst.BuffaloAttackRadius
+                                    && Vector2.Angle(VectorUtils.ToXZ(transform.forward),
+                                        (targetPosition - VectorUtils.ToXZ(transform.position))) <
+                                    GameConst.BuffaloAttackAngle)
+            {
+                buffaloView.PlayAttackAnimation();
+                return (targetPosition - VectorUtils.ToXZ(transform.position)).normalized * (GameConst.BuffaloAttackPower * (isBig ? 2f : 1f));
+            }else if (isBig && isInBigBody(targetPosition))
+            {
+                return (targetPosition - VectorUtils.ToXZ(transform.position)).normalized * (GameConst.BuffaloAttackPower * 2f);
+            }
+            return null;
+        }
+
+        private bool isInBigBody(Vector2 targetPosition)
+        {
+            Vector2 buffaloBackCenterPos = VectorUtils.ToXZ(-transform.forward * GameConst.BigBuffaloBodyLength + transform.position);
+            float ShaeiVectorLength = Vector2.Dot(VectorUtils.ToXZ(transform.forward), VectorUtils.ToXZ(targetPosition - buffaloBackCenterPos));
+            if (0 < ShaeiVectorLength && ShaeiVectorLength < GameConst.BigBuffaloBodyLength)
+            {
+                if (VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.forward) * ShaeiVectorLength,
+                        (targetPosition - buffaloBackCenterPos)) <
+                    GameConst.BigBuffaloBodyWidth * GameConst.BigBuffaloBodyWidth)
+                {
+                    return true;
+                } 
+            }else if (VectorUtils.SqrDistance(buffaloBackCenterPos, targetPosition) <
+                      GameConst.BigBuffaloBodyWidth * GameConst.BigBuffaloBodyWidth)
+            {
+                return true;
+            }else if (VectorUtils.SqrDistance(
+                          buffaloBackCenterPos + VectorUtils.ToXZ(transform.forward * GameConst.BigBuffaloBodyLength),
+                          targetPosition) <
+                      GameConst.BigBuffaloBodyWidth * GameConst.BigBuffaloBodyWidth)
+            {
+                return true;
+            }
+            return false;
         }
 
         private Vector2 getWalkTargetDirection()
@@ -85,35 +141,6 @@ namespace Buffalo
             Vector2 targetDirection = new Vector2(Random.Range(-GameConst.BuffaloWalkArea.x, GameConst.BuffaloWalkArea.x),Random.Range(-GameConst.BuffaloWalkArea.y, GameConst.BuffaloWalkArea.y));
 
             return targetDirection;
-        }
-        
-        public async UniTask Tackle(Vector3 targetPos)
-        { 
-            // cancelTokenSource.Cancel();
-            // IsTackling = true;
-            // Debug.Log("targetPos: " + targetPos);
-            // Vector2 targetPosXZ = VectorUtils.ToXZ(targetPos);
-            // float tackleDuration = 0f;
-            // float turnDuration = 0f;
-            // while (turnDuration < 1f)
-            // {
-            //     turnDuration += Time.deltaTime;
-            //     Turn(targetPosXZ);
-            //     await UniTask.Yield();
-            // }
-            //
-            // while (true)
-            // {
-            //     tackleDuration += Time.deltaTime;
-            //     if (tackleDuration >= tackleSpan) break;
-            //     Turn(targetPosXZ);
-            //     Move(GameConst.BuffaloTackleSpeed * SpeedUpRate * VectorUtils.ToXZ(transform.forward));
-            //     await UniTask.Yield();
-            // }
-            // onTacklEnd.OnNext(Unit.Default);
-            // IsTackling = false;
-            // cancelTokenSource = new CancellationTokenSource();
-            // Walk(cancelTokenSource.Token);
         }
         
         protected Quaternion GetTurnAmount(Vector2 targetVelocity)
@@ -146,6 +173,25 @@ namespace Buffalo
             }
 
             return null;
+        }
+
+        public float GetTackleScoreUp(Vector2 playerPosition)
+        {
+            if (VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), playerPosition) <
+                GameConst.DodgeScoreUpGigRadius * GameConst.DodgeScoreUpGigRadius
+                && Vector2.Angle(velocity, (playerPosition - VectorUtils.ToXZ(transform.position))) <
+                GameConst.DodgeScoreUpBigAngle)
+            {
+                return GameConst.DodgeScoreUpGigValue;
+            }else if(VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), playerPosition) <
+                GameConst.DodgeScoreUpSmallRadius * GameConst.DodgeScoreUpSmallRadius
+                && Vector2.Angle(velocity, (playerPosition - VectorUtils.ToXZ(transform.position))) <
+                GameConst.DodgeScoreUpSmallAngle)
+            {
+                return GameConst.DodgeScoreUpSmallValue;
+            }else{
+                return 0;
+            }
         }
     }
 }

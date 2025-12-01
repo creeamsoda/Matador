@@ -1,6 +1,8 @@
 using System;
+using Buffalo.BuffaloDiff;
 using Cysharp.Threading.Tasks;
 using DefaultNamespace;
+using DefaultNamespace.Audio;
 using UniRx;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,19 +12,23 @@ namespace Person
 {
     public class Person : MovableObject
     {
+        [SerializeField] protected Transform buffaloTransform;
+        [SerializeField] protected Transform buffaloRightTransform;
+        [SerializeField] protected Transform buffaloLeftTransform;
+        [SerializeField] protected Transform buffaloCenterTransform;
         [SerializeField] protected Buffalo.Buffalo buffalo;
+        [SerializeField] protected RightBuffalo rightBuffalo;
+        [SerializeField] protected LeftBuffalo leftBuffalo;
+        [SerializeField] protected CenterBuffalo centerBuffalo;
         protected bool isShowingCloth = false;
         [SerializeField] protected GameObject cloth;
+        [SerializeField] protected PlaySceneSoundManager playSceneSoundManager;
         
         protected override void Start()
         {
             base.Start();
             buffalo.OnWantToTackle.Subscribe(_ =>
             {
-                if (!buffalo.IsTackling && isShowingCloth)
-                {
-                    buffalo.Tackle(transform.position);
-                }
             });
         }
 
@@ -34,10 +40,10 @@ namespace Person
 
         protected void Turn()
         {
-            Vector2 toBuffalo = VectorUtils.ToXZ(buffalo.transform.position - transform.position);
-            Debug.Log("toBuffalo"+toBuffalo);
-            float angle = Vector2.SignedAngle(VectorUtils.ToXZ(transform.forward), toBuffalo);
-            Debug.Log("angle"+angle);
+            Transform targetTransform = GetNearestBuffalo();
+            
+            Vector2 toBuffalo = VectorUtils.ToXZ(targetTransform.position - transform.position);
+            float angle = Vector2.SignedAngle(VectorUtils.ToXZ(-transform.forward), toBuffalo);
             float rotateAmount;
             if (0 <= angle)
             {
@@ -47,7 +53,7 @@ namespace Person
             {
                 rotateAmount = Mathf.Max(angle, - GameConst.PlayerRotateSpeed * Time.deltaTime);
             }
-            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y-rotateAmount, 0);
+            direction = Quaternion.Euler(0, transform.rotation.eulerAngles.y+rotateAmount, 0);
         }
 
         protected async UniTask Dodge(InputAction moveAction)
@@ -55,6 +61,7 @@ namespace Person
             // スティック入力方向にかいひする
             Vector2 dodgeDirection = moveAction.ReadValue<Vector2>().normalized;
             float dodgeDuration = 0f;
+            playSceneSoundManager.PlayDodgeSound();
             while (true)
             {
                 dodgeDuration += Time.deltaTime;
@@ -82,6 +89,31 @@ namespace Person
         {
             isShowingCloth = false;
             cloth.SetActive(false);
+        }
+
+        protected Transform GetNearestBuffalo()
+        {
+            if (VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloTransform.position)) <
+                VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloRightTransform.position))
+                && VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloTransform.position)) <
+                VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloLeftTransform.position))
+                && VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloTransform.position)) <
+                VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloCenterTransform.position)))
+            {
+                return buffaloTransform;
+            }else if (VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloRightTransform.position)) <
+                      VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloLeftTransform.position))
+                      && VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloRightTransform.position)) <
+                      VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloCenterTransform.position)))
+            {
+                return buffaloRightTransform;
+            }else if (VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloLeftTransform.position)) <
+                      VectorUtils.SqrDistance(VectorUtils.ToXZ(transform.position), VectorUtils.ToXZ(buffaloCenterTransform.position)))
+            {
+                return buffaloLeftTransform;
+            }
+
+            return buffaloCenterTransform;
         }
     }
 }
