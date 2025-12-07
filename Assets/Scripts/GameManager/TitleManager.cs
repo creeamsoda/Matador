@@ -11,9 +11,15 @@ namespace DefaultNamespace
         [SerializeField] private GameObject tutrialWindow;
         private InputAction submitAction;
 
+        [SerializeField] private GameObject GetGoogleSpreadSheetButton;
+
         private void Start()
         {
             submitAction = playerInput.actions["Submit"];
+            GetGoogleSpreadSheetButton.SetActive(false);
+#if UNITY_EDITOR
+            GetGoogleSpreadSheetButton.SetActive(true);
+#endif
         }
 
         void Update()

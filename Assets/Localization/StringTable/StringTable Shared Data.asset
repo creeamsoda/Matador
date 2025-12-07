@@ -14,7 +14,1419 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: StringTable
   m_TableCollectionNameGuidString: d8141ad8d7483834c9afe3873e4c4951
-  m_Entries: []
+  m_Entries:
+  - m_Id: 372181572345929
+    m_Key: wishlist_link
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563592645140480
+    m_Key: test
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151646
+    m_Key: window_close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346079
+    m_Key: win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346074
+    m_Key: waiting_for_host
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346087
+    m_Key: vs_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345857
+    m_Key: update_is_required
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151576
+    m_Key: tutorial_work_sharing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151568
+    m_Key: tutorial_welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151601
+    m_Key: tutorial_wall_throw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151600
+    m_Key: tutorial_wall_dedicated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151599
+    m_Key: tutorial_wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151580
+    m_Key: tutorial_victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151591
+    m_Key: tutorial_use_magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151561
+    m_Key: tutorial_title5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151560
+    m_Key: tutorial_title4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151559
+    m_Key: tutorial_title3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151558
+    m_Key: tutorial_title2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151557
+    m_Key: tutorial_title1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151556
+    m_Key: tutorial_title0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151555
+    m_Key: tutorial_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151582
+    m_Key: tutorial_steal_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151583
+    m_Key: tutorial_steal_finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151584
+    m_Key: tutorial_special_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151569
+    m_Key: tutorial_slime_master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151574
+    m_Key: tutorial_slime_increased
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151572
+    m_Key: tutorial_slime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151593
+    m_Key: tutorial_rebirth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151587
+    m_Key: tutorial_own_special_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151571
+    m_Key: tutorial_move_here
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151570
+    m_Key: tutorial_move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151577
+    m_Key: tutorial_many_slime_victory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151586
+    m_Key: tutorial_many_slime_fast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151590
+    m_Key: tutorial_magic_book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151575
+    m_Key: tutorial_increase_slime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345932
+    m_Key: tutorial_guardian_use_slow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151595
+    m_Key: tutorial_guardian_send_to_opponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151598
+    m_Key: tutorial_guardian_run_away
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151597
+    m_Key: tutorial_guardian_induction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151596
+    m_Key: tutorial_guardian_finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151594
+    m_Key: tutorial_guardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151585
+    m_Key: tutorial_gather_special_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151579
+    m_Key: tutorial_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151603
+    m_Key: tutorial_finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151578
+    m_Key: tutorial_field_random
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151573
+    m_Key: tutorial_feed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151592
+    m_Key: tutorial_fall_rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151567
+    m_Key: tutorial_entrance_explain5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151566
+    m_Key: tutorial_entrance_explain4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151565
+    m_Key: tutorial_entrance_explain3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151564
+    m_Key: tutorial_entrance_explain2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151563
+    m_Key: tutorial_entrance_explain1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151562
+    m_Key: tutorial_entrance_explain0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151639
+    m_Key: tutorial_dialog_wall_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151637
+    m_Key: tutorial_dialog_wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151635
+    m_Key: tutorial_dialog_magic_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151634
+    m_Key: tutorial_dialog_magic_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151633
+    m_Key: tutorial_dialog_magic_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151632
+    m_Key: tutorial_dialog_magic_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151631
+    m_Key: tutorial_dialog_magic_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151630
+    m_Key: tutorial_dialog_magic_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151629
+    m_Key: tutorial_dialog_magic_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151628
+    m_Key: tutorial_dialog_chest_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151627
+    m_Key: tutorial_dialog_chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151638
+    m_Key: tutorial_dialog_call_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151636
+    m_Key: tutorial_dialog_call
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151589
+    m_Key: tutorial_chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151602
+    m_Key: tutorial_break_wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151581
+    m_Key: tutorial_basic_rule_finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151588
+    m_Key: tutorial_appear_chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345931
+    m_Key: try_again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151553
+    m_Key: to_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346067
+    m_Key: to_select_challenge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346069
+    m_Key: to_select_ai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346068
+    m_Key: to_match_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151620
+    m_Key: title_tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346056
+    m_Key: title_staffRoll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151624
+    m_Key: title_shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151625
+    m_Key: title_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151623
+    m_Key: title_records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151617
+    m_Key: title_random_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151618
+    m_Key: title_private_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346063
+    m_Key: title_network_error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151622
+    m_Key: title_magic_list
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151619
+    m_Key: title_local_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151621
+    m_Key: title_challenge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151616
+    m_Key: title_ai_battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345867
+    m_Key: tips_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345866
+    m_Key: tips_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345865
+    m_Key: tips_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345864
+    m_Key: tips_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345863
+    m_Key: tips_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345862
+    m_Key: tips_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345861
+    m_Key: tips_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345860
+    m_Key: tips_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345872
+    m_Key: tips_14
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345871
+    m_Key: tips_13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345870
+    m_Key: tips_12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345869
+    m_Key: tips_11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345868
+    m_Key: tips_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345859
+    m_Key: tips_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345858
+    m_Key: tips_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346051
+    m_Key: this_is_demo_no_end_time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151654
+    m_Key: this_is_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346043
+    m_Key: surrender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151652
+    m_Key: sudden_death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345949
+    m_Key: stats_you
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345947
+    m_Key: stats_walls_destruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345943
+    m_Key: stats_walls_built
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345942
+    m_Key: stats_walked_distance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345937
+    m_Key: stats_time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345944
+    m_Key: stats_spells_cast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345941
+    m_Key: stats_slimes_idle_time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345940
+    m_Key: stats_slimes_died
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345950
+    m_Key: stats_opponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345939
+    m_Key: stats_max_slimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345935
+    m_Key: stats_label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345946
+    m_Key: stats_killed_by_guardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345945
+    m_Key: stats_guardian_chase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345936
+    m_Key: stats_flags_collected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345938
+    m_Key: stats_evaluation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346088
+    m_Key: spectator_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151552
+    m_Key: space_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346084
+    m_Key: select_the_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151651
+    m_Key: rule_with_btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345896
+    m_Key: rule_ToughWall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345891
+    m_Key: rule_ThunderItemSpot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345888
+    m_Key: rule_SuddenDeathStart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345875
+    m_Key: rule_StartWithOneSmallFlag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345880
+    m_Key: rule_StartWith2SpyItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345882
+    m_Key: rule_StartWith2FasterMove
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345881
+    m_Key: rule_StartWith2FallingRockItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345883
+    m_Key: rule_StartWith2Bomb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345884
+    m_Key: rule_StartWith1Thunder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345893
+    m_Key: rule_SpyItemSpot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345898
+    m_Key: rule_SlowFlag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345890
+    m_Key: rule_ShortenBattleTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345876
+    m_Key: rule_ManySmallFlags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345886
+    m_Key: rule_ManyItemSpawnSpots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345885
+    m_Key: rule_ManyInitialWorkers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345887
+    m_Key: rule_ManyInitialWalls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345897
+    m_Key: rule_ManyFeeds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345874
+    m_Key: rule_KnockOutBy4SmallFlags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346054
+    m_Key: rule_Invalid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345877
+    m_Key: rule_GettingFirstFlagMakesMagicBook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345889
+    m_Key: rule_FewSmallFlags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345892
+    m_Key: rule_FasterMoveItemSpot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345894
+    m_Key: rule_FallingRockItemSpot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346053
+    m_Key: rule_Empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345878
+    m_Key: rule_BombRush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345895
+    m_Key: rule_BombItemSpot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345879
+    m_Key: rule_BigFlagInDistantPlace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346060
+    m_Key: rule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181563957248
+    m_Key: right_click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151645
+    m_Key: rematch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346078
+    m_Key: records_win_lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346077
+    m_Key: records_title_win_lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151649
+    m_Key: press_key_to_join
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345951
+    m_Key: press_any_button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346093
+    m_Key: play_tutorial_yes_no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346094
+    m_Key: now_spectating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346055
+    m_Key: not_in_demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346085
+    m_Key: not_found_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181391990784
+    m_Key: no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373691853135872
+    m_Key: Title_Matador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346066
+    m_Key: network_error_msg1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346064
+    m_Key: network_error_msg0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151610
+    m_Key: milestone_steal_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151611
+    m_Key: milestone_special_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151612
+    m_Key: milestone_open_chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151604
+    m_Key: milestone_move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151615
+    m_Key: milestone_induce_guardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151607
+    m_Key: milestone_increase_slime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151613
+    m_Key: milestone_get_magic_book
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151609
+    m_Key: milestone_gather_flags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151605
+    m_Key: milestone_gather
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151608
+    m_Key: milestone_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151606
+    m_Key: milestone_feed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346062
+    m_Key: milestone_destruct_wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346061
+    m_Key: milestone_create_wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151614
+    m_Key: milestone_chant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345928
+    m_Key: matching_timeout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346039
+    m_Key: magic_thunder_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346031
+    m_Key: magic_thunder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346033
+    m_Key: magic_spy_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346025
+    m_Key: magic_spy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346032
+    m_Key: magic_increase_worker_small_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346024
+    m_Key: magic_increase_worker_small
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346038
+    m_Key: magic_increase_worker_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346030
+    m_Key: magic_increase_worker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346036
+    m_Key: magic_guardian_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346028
+    m_Key: magic_guardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346037
+    m_Key: magic_fast_move_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346029
+    m_Key: magic_fast_move
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346035
+    m_Key: magic_falling_rock_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346027
+    m_Key: magic_falling_rock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346034
+    m_Key: magic_bomb_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346026
+    m_Key: magic_bomb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346080
+    m_Key: lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345900
+    m_Key: looking_for_opponent_wide
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345899
+    m_Key: looking_for_opponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181563957249
+    m_Key: left_click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151642
+    m_Key: last_spurt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346052
+    m_Key: label_time_limit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346083
+    m_Key: join_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345926
+    m_Key: input_room_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151657
+    m_Key: information_session_time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346048
+    m_Key: info_new_rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346046
+    m_Key: info_new_map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346058
+    m_Key: info_new_level_opened
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346047
+    m_Key: info_custom_rule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151648
+    m_Key: handicap_setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345927
+    m_Key: finding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346082
+    m_Key: find_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346092
+    m_Key: failed_to_join_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346095
+    m_Key: explanation_third_person_for_spectator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345960
+    m_Key: exp_wishlist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345956
+    m_Key: exp_tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346057
+    m_Key: exp_staffRoll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345958
+    m_Key: exp_settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345963
+    m_Key: exp_records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345953
+    m_Key: exp_random_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345959
+    m_Key: exp_quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345954
+    m_Key: exp_private_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345962
+    m_Key: exp_magic_list
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345955
+    m_Key: exp_local_match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345961
+    m_Key: exp_discord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345957
+    m_Key: exp_challenge_mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345952
+    m_Key: exp_ai_battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346090
+    m_Key: exit_spectate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346075
+    m_Key: error_sw_con_failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346070
+    m_Key: error_exit_opponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151641
+    m_Key: enable_chant_magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345930
+    m_Key: discord_link
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346086
+    m_Key: disbanded_the_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151640
+    m_Key: disable_chant_magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151656
+    m_Key: demo_download_from_server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151655
+    m_Key: demo_date_is_finished
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345873
+    m_Key: custom_rule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346081
+    m_Key: create_room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345925
+    m_Key: confirm_room_key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151647
+    m_Key: confirm_battle_start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151643
+    m_Key: color_support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345996
+    m_Key: challenge_WorkerCount2_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345966
+    m_Key: challenge_WorkerCount2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345995
+    m_Key: challenge_WorkerCount1_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345965
+    m_Key: challenge_WorkerCount1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345994
+    m_Key: challenge_WorkerCount0_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345964
+    m_Key: challenge_WorkerCount0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346072
+    m_Key: challenge_UseWall_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346071
+    m_Key: challenge_UseWall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346009
+    m_Key: challenge_SuddenDeath_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345979
+    m_Key: challenge_SuddenDeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346007
+    m_Key: challenge_StealFlag_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345977
+    m_Key: challenge_StealFlag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346016
+    m_Key: challenge_SmallFlagTugOfWar2_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345986
+    m_Key: challenge_SmallFlagTugOfWar2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346006
+    m_Key: challenge_SmallFlagTugOfWar1_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345976
+    m_Key: challenge_SmallFlagTugOfWar1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346004
+    m_Key: challenge_SmallFlagTugOfWar0_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345974
+    m_Key: challenge_SmallFlagTugOfWar0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346020
+    m_Key: challenge_SmallFlag5_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345990
+    m_Key: challenge_SmallFlag5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346019
+    m_Key: challenge_SmallFlag4_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345989
+    m_Key: challenge_SmallFlag4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346018
+    m_Key: challenge_SmallFlag3_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345988
+    m_Key: challenge_SmallFlag3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346010
+    m_Key: challenge_SmallFlag2_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345980
+    m_Key: challenge_SmallFlag2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346008
+    m_Key: challenge_SmallFlag1_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345978
+    m_Key: challenge_SmallFlag1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345997
+    m_Key: challenge_SmallFlag0_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345967
+    m_Key: challenge_SmallFlag0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346045
+    m_Key: challenge_rule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346022
+    m_Key: challenge_Reserved7_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345992
+    m_Key: challenge_Reserved7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346014
+    m_Key: challenge_RemoveWall1_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345983
+    m_Key: challenge_RemoveWall1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345999
+    m_Key: challenge_RemoveWall0_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345969
+    m_Key: challenge_RemoveWall0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346015
+    m_Key: challenge_RemoveGuardian2_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345985
+    m_Key: challenge_RemoveGuardian2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346013
+    m_Key: challenge_RemoveGuardian1_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345984
+    m_Key: challenge_RemoveGuardian1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345998
+    m_Key: challenge_RemoveGuardian0_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345968
+    m_Key: challenge_RemoveGuardian0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346042
+    m_Key: challenge_progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346002
+    m_Key: challenge_PracticeSpy_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345972
+    m_Key: challenge_PracticeSpy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346003
+    m_Key: challenge_PracticeFastMove_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345973
+    m_Key: challenge_PracticeFastMove
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346000
+    m_Key: challenge_PracticeBattle_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345970
+    m_Key: challenge_PracticeBattle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346023
+    m_Key: challenge_PerformanceMeasurement_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345993
+    m_Key: challenge_PerformanceMeasurement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346017
+    m_Key: challenge_NoKillWorkers1_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345987
+    m_Key: challenge_NoKillWorkers1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346005
+    m_Key: challenge_NoKillWorkers0_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345975
+    m_Key: challenge_NoKillWorkers0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346011
+    m_Key: challenge_Neighbors_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345981
+    m_Key: challenge_Neighbors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346065
+    m_Key: challenge_level_unlock_condition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346041
+    m_Key: challenge_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346001
+    m_Key: challenge_KillAllWorkers_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345971
+    m_Key: challenge_KillAllWorkers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346040
+    m_Key: challenge_entrance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346012
+    m_Key: challenge_Crisis_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345982
+    m_Key: challenge_Crisis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346021
+    m_Key: challenge_Bomber_exp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345991
+    m_Key: challenge_Bomber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151626
+    m_Key: button_confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151644
+    m_Key: btn_pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345902
+    m_Key: btn_guide_wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345901
+    m_Key: btn_guide_throw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345904
+    m_Key: btn_guide_strike
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345903
+    m_Key: btn_guide_magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345933
+    m_Key: btn_guide_call_and_slow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345906
+    m_Key: btn_guide_call
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345905
+    m_Key: btn_guide_attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346091
+    m_Key: btn_exit_spectator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345934
+    m_Key: btn_details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346059
+    m_Key: bot_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346050
+    m_Key: border_pass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346049
+    m_Key: best_time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151653
+    m_Key: battle_point
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346076
+    m_Key: battle_opponent_surrender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345948
+    m_Key: battle_level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151658
+    m_Key: banned_now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151650
+    m_Key: back_with_btn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181559762944
+    m_Key: back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346044
+    m_Key: ask_surrender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346089
+    m_Key: ask_exit_spectate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346073
+    m_Key: ask_exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151554
+    m_Key: application_quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345856
+    m_Key: almost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345923
+    m_Key: advise_steal_sp_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345922
+    m_Key: advise_steal_small_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345920
+    m_Key: advise_protect_from_guardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345913
+    m_Key: advise_magic_WorkerIncreaseSmall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345914
+    m_Key: advise_magic_WorkerIncrease
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345912
+    m_Key: advise_magic_Thunder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345910
+    m_Key: advise_magic_Spy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345915
+    m_Key: advise_magic_SendingGuardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345911
+    m_Key: advise_magic_FasterMove
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345909
+    m_Key: advise_magic_FallingRock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345916
+    m_Key: advise_magic_Bomb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345907
+    m_Key: advise_increase_slime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345919
+    m_Key: advise_guide_guardian
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345917
+    m_Key: advise_free_workers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345918
+    m_Key: advise_explore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345908
+    m_Key: advise_efficiently_work
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345924
+    m_Key: advise_cant_carry_my_flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345921
+    m_Key: advise_build_wall
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

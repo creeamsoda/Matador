@@ -16,8 +16,1582 @@ MonoBehaviour:
     m_Code: es-ES
   m_SharedData: {fileID: 11400000, guid: d8141ad8d7483834c9afe3873e4c4951, type: 2}
   m_Metadata:
-    m_Items: []
-  m_TableData: []
+    m_Items:
+    - rid: 46649027321921740
+  m_TableData:
+  - m_Id: 372181391990784
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181559762944
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181563957248
+    m_Localized: right click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181563957249
+    m_Localized: left click
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151552
+    m_Localized: space key
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151553
+    m_Localized: To Title screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151554
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151555
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151556
+    m_Localized: 1. Basic Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151557
+    m_Localized: 2. Stealing Small Flags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151558
+    m_Localized: 3. Big Flags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151559
+    m_Localized: 4. Magic Books
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151560
+    m_Localized: 5. Guardians
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151561
+    m_Localized: 6. Walls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151562
+    m_Localized: 'Ho ho ho... There you are. Welcome.
+
+      From today, you''ll
+      be an apprentice Slimemancer.
+
+      We''ll begin with the basics.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151563
+    m_Localized: 'Here''s how to steal the enemy''s
+
+      small flags.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151564
+    m_Localized: 'Steal the enemy''s big flags
+
+      for the win!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151565
+    m_Localized: 'Now I''ll show you how to use magic books
+
+      to activate powerful
+      effects.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151566
+    m_Localized: 'Here''s how to use Guardians that will attack
+
+      both enemies
+      and allies equally.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151567
+    m_Localized: 'Here''s how to build walls that will interfere
+
+      with your
+      enemies'' advance.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151568
+    m_Localized: 'Ho ho ho... There you are. Welcome.
+
+      From today, you''ll
+      be a Slime Tamer apprentice.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151569
+    m_Localized: 'I will give you the ability to participate in my clan''s traditional
+      summoning battles.
+
+      Improve your slime taming skills here if you want
+      to become a slime master.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151570
+    m_Localized: Move up/down/left/right with #{btn_move}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151571
+    m_Localized: First, try moving to the yellow circle using #{btn_move}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151572
+    m_Localized: 'I shall grant you a slime to be your companion.
+
+      Point at
+      it with the cursor, then <color=red>long-press</color> #{btn_whistle} to summon
+      it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151573
+    m_Localized: 'Next, try throwing the slime at that <color=red>magic fruit</color>.
+
+      Point
+      at it with the cursor and press #{btn_throw_with_text}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151574
+    m_Localized: Bring the fruit back to your magic circle, and your slimes will
+      multiply. The key to victory is to <color=red>increase your slimes as much
+      and as quickly as you can</color>!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151575
+    m_Localized: First, try to increase the number of slimes to #{paramI0}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151576
+    m_Localized: 'Throw them at different places, too.
+
+      It''s more efficient
+      to <color=red>have them do multiple tasks at the same time</color>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151577
+    m_Localized: Victory lies in increasing your slimes faster than your opponent!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151578
+    m_Localized: 'While the slimes are working, you should
+
+      <color=red>explore</color>
+      and get a good grasp of the field.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151579
+    m_Localized: 'Now, see that? A <color=red>small flag</color> has appeared.
+
+      Throw
+      a slime to collect it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151580
+    m_Localized: 'Whoever collects the most before the time runs out wins.
+
+      If
+      you collect <color=red>3 flags</color>, you win by default!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151581
+    m_Localized: 'Excellent use of your slimes!
+
+      Wonderful!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151582
+    m_Localized: 'You can also <color=red>steal</color> small flags from your opponent.
+
+      If
+      you remove them from their magic circle,
+
+      they will no longer belong
+      to your opponent.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151583
+    m_Localized: 'Nice work! Stealing your opponent''s
+
+      small flags like that
+      can be the key to victory!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151584
+    m_Localized: 'If you collect your opponent''s <color=red>big flag</color>,
+
+      you
+      can claim a comeback victory in one move!
+
+      Throw lots of slimes to carry
+      it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151585
+    m_Localized: Let's collect the big flag!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151586
+    m_Localized: You can carry it faster if you carry it with a lot of slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151587
+    m_Localized: 'The rules say that you <color=red>can''t move your own color''s
+      big flag</color>.
+
+      Keep that in mind.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151588
+    m_Localized: 'Sometimes I''ll drop little <color=red>treasure chests</color>
+      for you.
+
+      Make sure you grab them!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151589
+    m_Localized: Throw slimes and open the parcel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151590
+    m_Localized: 'Inside, you''ll find <color=red>magic books</color>.
+
+      Each
+      one is powerful, so wait for the right moment and use them wisely.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151591
+    m_Localized: 'Cast a magic spell using #{btn_item}.
+
+      Try using it now.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151592
+    m_Localized: Ho ho ho... "Falling Rocks" drops rocks where the cursor points.
+      In battle, be sure to aim at the opponent's team!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151593
+    m_Localized: 'But even if your slimes get crushed, don''t worry.
+
+      They
+      will be <color=red>revived</color> within your magic circle.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151594
+    m_Localized: '<color=red>Guardians</color> will attack anyone who enters the
+      <color=red>purple circles</color>,
+
+      regardless of whether they are friend
+      or foe.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151595
+    m_Localized: 'You can either run away or cleverly lure them to where you can
+      <color=red>turn them against your opponent</color>.
+
+      Try leading one
+      to your opponent''s magic circle.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151596
+    m_Localized: 'You used the Guardian to your advantage very well!
+
+      Magnificent!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151597
+    m_Localized: Use guardians to defeat your opponent's slimes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151598
+    m_Localized: 'Guardians prioritize targeting wizards.
+
+      Lead them near enemy
+      slimes, then run away.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151599
+    m_Localized: 'Try throwing a slime at that <color=red>orange rock</color>.
+
+      You''ll
+      have to hold #{btn_throw_with_text} <color=red>longer</color> than usual.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151600
+    m_Localized: See that? It became a <color=red>wall</color> for you! Isn't that
+      amazing?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151601
+    m_Localized: Let's build a wall!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151602
+    m_Localized: 'You can destroy any walls that get in your way, too.
+
+      Try
+      throwing a slime at one.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151603
+    m_Localized: 'What a masterful use of slimes! Now you only need to
+
+      improve
+      your skills with experience in real battles!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151604
+    m_Localized: Move the player.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151605
+    m_Localized: Call the slimes with a #{btn_whistle}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151606
+    m_Localized: Collect magic fruit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151607
+    m_Localized: Increase the number of slimes to #{paramI0}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151608
+    m_Localized: Collect one small flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151609
+    m_Localized: Collect #{paramI0} small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151610
+    m_Localized: Steal a small flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151611
+    m_Localized: Collect a big flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151612
+    m_Localized: Collect a treasure chest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151613
+    m_Localized: Get a magic book.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151614
+    m_Localized: Use magic.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151615
+    m_Localized: Guide a guardian to an opponent's base.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151616
+    m_Localized: AI Battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151617
+    m_Localized: Random Battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151618
+    m_Localized: Private Battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151619
+    m_Localized: Split-screen Battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151620
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151621
+    m_Localized: Solo Missions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151622
+    m_Localized: Magic Spell List
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151623
+    m_Localized: Battle Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151624
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151625
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151626
+    m_Localized: Confirm #{btn_confirm}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151627
+    m_Localized: Treasure Chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151628
+    m_Localized: '<color=red>Treasure Chests</color> can be found on the playing
+      field.
+
+      Use slimes to collect the treasure chests and reveal a <color=red>magic
+      book</color> inside.
+
+      Magic books can be activated with #{btn_item}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151629
+    m_Localized: Drop rocks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151630
+    m_Localized: Become invisible to your opponent for a set amount of time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151631
+    m_Localized: Slimes can move faster for a set amount of time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151632
+    m_Localized: Opponents are struck by lightning and move slowly for a certain
+      amount of time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151633
+    m_Localized: Increase slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151634
+    m_Localized: Guardians appear and chase your opponent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151635
+    m_Localized: Bombs appear and chase your opponent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151636
+    m_Localized: Call slimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151637
+    m_Localized: Walls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151638
+    m_Localized: Hold #{btn_whistle} to call the slimes over to you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151639
+    m_Localized: 'Block guardians with walls.
+
+      Use them to interfere with your
+      opponent''s movements.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151640
+    m_Localized: '#{btn_item_disabled} Magic'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151641
+    m_Localized: '#{btn_item_enabled} Magic'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151642
+    m_Localized: 1 minute left!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151643
+    m_Localized: Colorblind Support Mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151644
+    m_Localized: '#{btn_menu} Pause'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151645
+    m_Localized: Rematch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151646
+    m_Localized: '#{btn_confirm} Close'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151647
+    m_Localized: Start Game #{btn_start}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151648
+    m_Localized: Starter slimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151649
+    m_Localized: Press any button to join.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151650
+    m_Localized: '#{btn_back} Back'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151651
+    m_Localized: '#{btn_rule} Set Rules'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151652
+    m_Localized: Sudden Death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151653
+    m_Localized: Battle Points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151654
+    m_Localized: 'This is a demo version.
+
+      You can play up to #{paramS0}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151655
+    m_Localized: 'Thank you for playing the demo!
+
+      The period for playing the
+      demo version has ended.
+
+      Please wait for the full game to be released.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151656
+    m_Localized: Downloading data from server...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151657
+    m_Localized: Random Battle can only be played during the following times.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181568151658
+    m_Localized: Not available at this time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345856
+    m_Localized: So close!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345857
+    m_Localized: 'A new version of the game is available.
+
+      Please update your
+      game before continuing.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345858
+    m_Localized: More slimes carrying an item will transport it faster.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345859
+    m_Localized: More slimes carrying an item makes it harder to increase speed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345860
+    m_Localized: It's a good idea to increase the amount of slimes right at the start
+      of the battle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345861
+    m_Localized: You can directly attack walls when you have no slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345862
+    m_Localized: You can't carry your big flag with your own army.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345863
+    m_Localized: 'If you guide guardians near your opponents when you have the chance,
+
+      you
+      can disrupt their plans.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345864
+    m_Localized: A big magic fruit will produce three slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345865
+    m_Localized: Guardians are difficult to damage with slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345866
+    m_Localized: But if you use magic, it's not impossible to defeat guardians.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345867
+    m_Localized: If you're lucky enough to defeat a guardian, you'll get a magic
+      fruit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345868
+    m_Localized: Guardians' attacks will do some damage to walls.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345869
+    m_Localized: If there's a tie when the battle timer comes to an end, the game
+      will go into sudden death.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345870
+    m_Localized: When there is 1 minute left, the location of small flags will be
+      displayed on the mini map momentarily.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345871
+    m_Localized: Press #{btn_whistle} to call one slime, or hold it to call them
+      all.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345872
+    m_Localized: "You can strike the wall yourself when you don\u2019t have any slimes
+      with you"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345873
+    m_Localized: Custom Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345874
+    m_Localized: Collect 4 flags to win by default!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345875
+    m_Localized: Start with 1 small flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345876
+    m_Localized: You have too many small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345877
+    m_Localized: Get a magic book with your first small flag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345878
+    m_Localized: bomb rush
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345879
+    m_Localized: Big flags are located far away.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345880
+    m_Localized: Start with 2 Invisible spells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345881
+    m_Localized: Start with 2 Falling Rocks spells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345882
+    m_Localized: Start with 2 Speed spells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345883
+    m_Localized: Start with 2 Bomb spells
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345884
+    m_Localized: Start with 1 Lightning spell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345885
+    m_Localized: Many starter slimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345886
+    m_Localized: Many magic spots
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345887
+    m_Localized: Start with lots of walls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345888
+    m_Localized: Start in Sudden Death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345889
+    m_Localized: Fewer small flags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345890
+    m_Localized: Short battle time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345891
+    m_Localized: Include a Lightning magic spot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345892
+    m_Localized: Include a Speed magic spot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345893
+    m_Localized: Include an Invisible magic spot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345894
+    m_Localized: Include a Falling Rocks magic spot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345895
+    m_Localized: Include a Bomb magic spot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345896
+    m_Localized: Walls are harder to break
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345897
+    m_Localized: Many magic fruits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345898
+    m_Localized: Carrying the flag is slow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345899
+    m_Localized: Searching for an opponent...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345900
+    m_Localized: Searching wider parameters for an opponent...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345901
+    m_Localized: '#{btn_throw} Throw'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345902
+    m_Localized: '#{btn_throw} Wall'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345903
+    m_Localized: '#{btn_item} Magic'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345904
+    m_Localized: '#{btn_throw} Wall Strike'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345905
+    m_Localized: '#{btn_throw} Attack'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345906
+    m_Localized: '#{btn_whistle} Call'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345907
+    m_Localized: First, collect magic fruit to increase your slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345908
+    m_Localized: It's more efficient to give slimes different jobs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345909
+    m_Localized: "Falling Rocks does just that \u2014 drops rocks! Try it with #{btn_item}!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345910
+    m_Localized: Invisibility spells hide you from your opponents! Try using #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345911
+    m_Localized: Speed up spells help you work faster! Try using #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345912
+    m_Localized: Lightning spells zap your opponents! Try using #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345913
+    m_Localized: Slime summon spells increase your slimes! Try using #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345914
+    m_Localized: Mass slime summon spells greatly increase your slimes! Try using
+      #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345915
+    m_Localized: Guardian summon spells send a guardian after your opponent! Try
+      using #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345916
+    m_Localized: Bomb summon spells send your opponents flying! Try using #{btn_item}!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345917
+    m_Localized: 'Looks like some of your slimes have nothing to do.
+
+      You really
+      should put them to work.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345918
+    m_Localized: Do some exploring while the slimes are moving around.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345919
+    m_Localized: It's a good idea to send a guardian over to your opponents to mess
+      with them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345920
+    m_Localized: Lead the guardian carefully so it doesn't kill any slimes carrying
+      flags for you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345921
+    m_Localized: Create walls to block your opponent's way.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345922
+    m_Localized: It's also possible to sneakily take your opponent's flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345923
+    m_Localized: Or you can aim to steal the big flag and claim victory!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345924
+    m_Localized: You can't carry your own big flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345925
+    m_Localized: '#{btn_start} Search'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345926
+    m_Localized: Enter a password you and a friend agreed on.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345927
+    m_Localized: Searching...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345928
+    m_Localized: No opponents found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345929
+    m_Localized: Add to Wishlist
+    m_Metadata:
+      m_Items:
+      - rid: 46649027321921740
+  - m_Id: 372181572345930
+    m_Localized: Join our Discord!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345931
+    m_Localized: Try again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345932
+    m_Localized: 'Press #{btn_slow} while walking to go slowly.
+
+      It''s easier
+      to lead guardians that way.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345933
+    m_Localized: '#{btn_whistle_icon_only} Call slimes
+
+      #{btn_slow} Walk slowly'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345934
+    m_Localized: '#{btn_item_enabled} Info'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345935
+    m_Localized: Stats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345936
+    m_Localized: Collected flags
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345937
+    m_Localized: Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345938
+    m_Localized: Rating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345939
+    m_Localized: Max slimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345940
+    m_Localized: Crushed slimes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345941
+    m_Localized: Free Slimes Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345942
+    m_Localized: Distance Walked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345943
+    m_Localized: Created Walls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345944
+    m_Localized: Spells Used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345945
+    m_Localized: Time chased by guardians
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345946
+    m_Localized: Slimes crushed by guardians
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345947
+    m_Localized: Walls destroyed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345948
+    m_Localized: Battle Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345949
+    m_Localized: You
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345950
+    m_Localized: Opponent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345951
+    m_Localized: Press any button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345952
+    m_Localized: Play against the computer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345953
+    m_Localized: Play a random match online.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345954
+    m_Localized: Use a password to play with friends online.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345955
+    m_Localized: Use split-screen to play with two players on one device.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345956
+    m_Localized: This mode helps you learn the rules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345957
+    m_Localized: A solo mode where you take on and clear challenges.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345958
+    m_Localized: Change the sound and graphic settings.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345959
+    m_Localized: Exit game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345960
+    m_Localized: This will open your Wishlist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345961
+    m_Localized: Join our Discord community here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345962
+    m_Localized: See more info on the magic spells here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345963
+    m_Localized: See your battle records here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345964
+    m_Localized: Increase Slimes! 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345965
+    m_Localized: Increase Slimes! 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345966
+    m_Localized: Increase Slimes! 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345967
+    m_Localized: Collect Small Flags! 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345968
+    m_Localized: Defeat Guardians! 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345969
+    m_Localized: Break Walls! 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345970
+    m_Localized: Practice Match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345971
+    m_Localized: Red Juice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345972
+    m_Localized: Master Invisibility Spells!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345973
+    m_Localized: Master Speed Spells!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345974
+    m_Localized: Tug-Of-War 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345975
+    m_Localized: Don't Crush Slimes! 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345976
+    m_Localized: Tug-Of-War 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345977
+    m_Localized: Steal Your Opponent's Small Flag!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345978
+    m_Localized: Collect Small Flags! 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345979
+    m_Localized: Sudden Death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345980
+    m_Localized: Collect Small Flags! 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345981
+    m_Localized: Battle Thy Neighbor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345982
+    m_Localized: In a Pinch!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345983
+    m_Localized: Break Walls! 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345984
+    m_Localized: Defeat Guardians! 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345985
+    m_Localized: Defeat Guardians! 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345986
+    m_Localized: Tug-Of-War 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345987
+    m_Localized: Don't Crush Slimes! 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345988
+    m_Localized: Collect Small Flags! 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345989
+    m_Localized: Collect Small Flags! 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345990
+    m_Localized: Collect Small Flags! 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345991
+    m_Localized: Bomb User
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345992
+    m_Localized: (Temporary)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345993
+    m_Localized: Processing load measurement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345994
+    m_Localized: Increase the number of slimes to 10.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345995
+    m_Localized: Increase the number of slimes to 20.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345996
+    m_Localized: Increase the number of slimes to 30.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345997
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345998
+    m_Localized: Defeat all guardians.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572345999
+    m_Localized: Break all walls.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346000
+    m_Localized: Win a battle playing with the basic rules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346001
+    m_Localized: Defeat all your opponent's slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346002
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346003
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346004
+    m_Localized: Collect 1 small flag first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346005
+    m_Localized: Carry back a big flag without losing a single slime.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346006
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346007
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346008
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346009
+    m_Localized: Win a battle playing in Sudden Death.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346010
+    m_Localized: Collect 3 small flags before carrying a large flag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346011
+    m_Localized: Win a battle playing with the basic rules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346012
+    m_Localized: Win a battle playing with the basic rules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346013
+    m_Localized: Defeat all guardians.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346014
+    m_Localized: Break all walls.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346015
+    m_Localized: Defeat all guardians without crushing any slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346016
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346017
+    m_Localized: Carry back a big flag without losing a single slime.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346018
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346019
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346020
+    m_Localized: Collect 3 small flags.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346021
+    m_Localized: Win a battle playing with the basic rules.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346022
+    m_Localized: (Temporary)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346023
+    m_Localized: Processing load measurement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346024
+    m_Localized: Slime summon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346025
+    m_Localized: Invisibility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346026
+    m_Localized: Bomb summon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346027
+    m_Localized: Falling rocks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346028
+    m_Localized: Guardian summon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346029
+    m_Localized: Speed up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346030
+    m_Localized: Mass slime summon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346031
+    m_Localized: Lightning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346032
+    m_Localized: Summon 1 slime.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346033
+    m_Localized: Your opponent will be unable to see guardians for a certain amount
+      of time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346034
+    m_Localized: Summon bombs to chase your opponent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346035
+    m_Localized: Drop rocks where your pointer indicates.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346036
+    m_Localized: Summon a guardian to chase your opponent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346037
+    m_Localized: Slimes work faster for a short amount of time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346038
+    m_Localized: Summon 4 slimes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346039
+    m_Localized: Zap your opponent with lightning to slow them down.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346040
+    m_Localized: 'Take on the challenges and sharpen your skills.
+
+      Now, choose
+      your level.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346041
+    m_Localized: Level #{paramI0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346042
+    m_Localized: Progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346043
+    m_Localized: Surrender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346044
+    m_Localized: Do you want to surrender?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346045
+    m_Localized: Mission Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346046
+    m_Localized: You've unlocked a new map!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346047
+    m_Localized: You've unlocked custom rules!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346048
+    m_Localized: You've unlocked new custom rules!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346049
+    m_Localized: Best Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346050
+    m_Localized: Pass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346051
+    m_Localized: This is a demo version.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346052
+    m_Localized: 'Time Limit: #{paramS0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346053
+    m_Localized: None
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346054
+    m_Localized: Random
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346055
+    m_Localized: Not available in demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346056
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346057
+    m_Localized: Here's a list of people involved in the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346058
+    m_Localized: New level unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346059
+    m_Localized: AI Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346060
+    m_Localized: Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346061
+    m_Localized: Throw a slime to create a wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346062
+    m_Localized: Tear down a wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346063
+    m_Localized: Network Error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346064
+    m_Localized: Connection with the opponent was lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346065
+    m_Localized: x #{paramI1} to unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346066
+    m_Localized: Cannot connect to the network.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346067
+    m_Localized: To Mission Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346068
+    m_Localized: To Battle Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346069
+    m_Localized: To AI Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346070
+    m_Localized: The other player has left the room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346071
+    m_Localized: Use the wall well!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346072
+    m_Localized: Carry the flag before your opponent without crushing your own slime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346073
+    m_Localized: Do you want to quit the match?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346074
+    m_Localized: 1P is operating...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346075
+    m_Localized: Failed to connect to controllers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346076
+    m_Localized: Your opponent has surrendered
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346077
+    m_Localized: Recent Wins & Losses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346078
+    m_Localized: 'Win:#{paramI0} Lose: #{paramI1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346079
+    m_Localized: Win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346080
+    m_Localized: Lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346081
+    m_Localized: Create Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346082
+    m_Localized: Find Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346083
+    m_Localized: Join Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346084
+    m_Localized: Select a Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346085
+    m_Localized: No Rooms Found
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346086
+    m_Localized: The Room was Disbanded
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346087
+    m_Localized: Battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346088
+    m_Localized: Spectate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346089
+    m_Localized: Leave Spectate Mode?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346090
+    m_Localized: Leave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346091
+    m_Localized: '#{btn_menu} Leave'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346092
+    m_Localized: Could not join the room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346093
+    m_Localized: 'We recommend playing the tutorial first.
+
+      Would you like
+      to play it?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346094
+    m_Localized: '#{paramS0} Spectating'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372181572346095
+    m_Localized: 'By joining the match setup screen as the third player,
+
+      you
+      can watch the match'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 373691853135872
+    m_Localized: Matador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 563592645140480
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 46649027321921740
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 46649027321921740
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 372181572345929
+        - id: 563592645140480
